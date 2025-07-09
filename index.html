@@ -1,213 +1,298 @@
-<!DOCTYPE html> 
-<html lang="en"> 
- 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Document</title> 
-    <link rel="icon" type="image/x-icon" 
-        href="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg"> 
-    <style> 
-        @font-face { 
-            font-family: 'Mozilla'; 
-            src: url('./fonts/webfonts/MozillaHeadline-ExpandedLight.woff2') format('woff2'); 
-        } 
- 
-        * { 
-            font-family: 'Mozilla' !important; 
-        } 
- 
-        .header-1 { 
-            background-color: rgb(255, 255, 255); 
-            margin-top: -10px; 
-            justify-content: space-between; 
-            align-items: center; 
-            display: flex; 
-            font-family: "Mozilla Text", "Helvetica Neue", "Arial", "X-LocaleSpecific", "sans-serif"; 
-            /* gap: 100px; */ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg">
+
+    <style>
+        @font-face {
+            font-family: 'Mozilla';
+            src: url('./fonts/webfonts/MozillaHeadline-ExpandedLight.woff2') format('woff2');
+        }
+
+        * {
+            font-family: 'Mozilla' !important;
+
+        }
+
+        .header-1 {
+            background-color: rgb(255, 255, 255);
+            margin-top: -10px;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            font-family: "Mozilla Text", "Helvetica Neue", "Arial", "X-LocaleSpecific", "sans-serif";
+            /* gap: 100px; */
             /* box-shadow: 0px 1px 10px rgba(32, 33, 36, 0.28); 
-            border-color: rgba(223, 225, 229, 0); */ 
-        } 
- 
-        .logo-up { 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            gap: 9px; 
-        } 
- 
-        .header-2 { 
-            background-color: #f8f7f7; 
+            border-color: rgba(223, 225, 229, 0); */
+        }
+
+        .logo-up {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+        }
+
+        .header-2 {
+            background-color: #f8f7f7;
             /* padding-right: 5000px; 
-            padding-left: 100%; */ 
-            justify-content: space-between; 
-            align-items: center; 
-            display: flex; 
- 
-            padding-right: 40px; 
-            font-family: "Mozilla Text", "Helvetica Neue", "Arial", "X-LocaleSpecific", "sans-serif"; 
-            font-size: 15px; 
-            margin-right: -10px; 
-            margin-left: -10px; 
-            border-top: 2px solid rgb(238, 237, 237); 
- 
- 
- 
-        } 
- 
-        .titlelogo { 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            gap: 50px; 
- 
-        } 
- 
-        .header-image { 
-            display: flex; 
-            justify-content: start; 
-            align-items: center; 
-        } 
- 
-        .titlelogo2 { 
-            display: flex; 
-            justify-content: space-around; 
-            align-items: center; 
-            margin: 5px; 
-            padding-left: 245px; 
-        } 
- 
-        .nav-item { 
-            display: flex; 
-            justify-content: space-around; 
-            align-items: center; 
-            gap: 20px; 
-            padding-right: 160px; 
-        } 
- 
- 
- 
-        .section-one { 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            margin-top: 90px; 
-            gap: 40px; 
-        } 
- 
- 
-        .section-text { 
-            display: flex; 
-            justify-content: center; 
-            align-items: start; 
-            flex-direction: column; 
-        } 
- 
-        .section-img { 
-            display: flex; 
-            justify-content: end; 
-            align-items: center; 
-            padding: 0; 
-        } 
- 
-        .section-img>img { 
-            width: 75%; 
-        } 
- 
-        .div-text { 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-        } 
- 
-        .download-btn { 
-            padding: 12px 25px; 
-            color: white; 
-            background-color: #0060df; 
-            border: none; 
-            border-radius: 5px; 
-            font-weight: 800; 
-            margin-top: 25px; 
-        } 
- 
-        .help-text { 
-            color: #42414d; 
-            text-decoration: none; 
-            margin-top: 20px; 
-            font-size: 12px; 
-        } 
- 
-        .help-text:hover { 
-            text-decoration: underline; 
-        } 
-    </style> 
-</head> 
- 
-<body> 
- 
-    <header class="header-1"> 
-        <div class="header-image"> 
- 
-            <img class="m24-c-navigation-logo-image" 
-                src="https://www.mozilla.org/media/img/logos/m24/lockup-black.f2ddba3f0724.svg" alt="Mozilla" 
-                width="101" height="24"> 
- 
-        </div> 
-        <div class="titlelogo"> 
-            <div class="logo-up"><img 
-                    src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg" 
-                    class="m24-c-menu-title-icon" width="16" height="16" alt=""> 
-                <p><strong>Firefox browsers</strong></p> 
-            </div> 
- 
-            <p><strong>Products</strong></p> 
-            <p><strong>About us</strong></p> 
- 
-        </div> 
-        <div></div> 
-    </header> 
- 
-    <nav class="header-2"> 
-        <div class="titlelogo2"> 
-            <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg" 
-                class="m24-c-menu-title-icon" width="23" height="23" alt=""> 
-            <h3>firefox</h3> 
-        </div> 
-        <div class="nav-item"> 
-            <h4>Desktop</h4> 
-            <p>Mobile</p> 
-            <p>features</p> 
-            <p>Compare Browsers</p> 
-            <p>More</p> 
-        </div> 
-    </nav> 
- 
-    <section class="section-one"> 
-        <div class="section-text"> 
-            <div class="div-text"> 
-                <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg" 
-                    class="m24-c-menu-title-icon" width="50" height="50" alt=""> 
-                <h1><span style="font-size: 30px;">Firefox </span>Browser</h1> 
-            </div> 
-            <h2 style="font-size: 40px;">Take control of<br /> your internet</h2> 
-            <p>Go online with fewer distractions, noise and stress.<br /> Think of us as bubble wrap for your brain.</p> 
-            <label for="set"> 
-                <input checked type="checkbox" name="set" id="set"> 
-                Set Firefox as your default browser. 
-            </label> 
-            <button class="download-btn">Download Firefox</button> 
-            <a class="help-text" href="#">Firefox Privacy Notice</a> 
-            <a class="help-text" href="#">Download options and other languages</a> 
-            <a class="help-text" href="#">Firefox Browser support</a> 
-        </div> 
-        <div class="section-img"> 
-            <img src="https://www.mozilla.org/media/img/firefox/new/desktop/firefox-new-refresh/hero.6172ddfeb189.png" 
-                srcset="https://www.mozilla.org/media/img/firefox/new/desktop/firefox-new-refresh/hero-high-res.3a264c17970e.png 2x" 
-                alt="Firefox on desktop and mobile." class="c-block-media-img" width="768"> 
-        </div> 
-    </section> 
- 
- 
-</body> 
- 
+            padding-left: 100%; */
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+
+            padding-right: 40px;
+            font-family: "Mozilla Text", "Helvetica Neue", "Arial", "X-LocaleSpecific", "sans-serif";
+            font-size: 15px;
+            margin-right: -10px;
+            margin-left: -10px;
+            border-top: 2px solid rgb(238, 237, 237);
+
+
+
+        }
+
+        .titlelogo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+        }
+
+        .header-image {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        .titlelogo2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 5px;
+            padding-left: 245px;
+        }
+
+        .nav-item {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            padding-right: 160px;
+        }
+
+
+
+        .section-one {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 90px;
+            gap: 40px;
+        }
+
+
+        .section-text {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+        }
+
+        .section-img {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding: 0;
+        }
+
+        .section-img>img {
+            width: 75%;
+        }
+
+        .div-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .download-btn {
+            padding: 12px 25px;
+            color: white;
+            background-color: #0060df;
+            border: none;
+            border-radius: 4px;
+            font-weight: 800;
+            margin-top: 25px;
+        }
+
+        .help-text {
+            color: #42414d;
+            text-decoration: none;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+
+        .help-text:hover {
+            text-decoration: underline;
+        }
+
+        .section-two {
+            background-color: #ededf0;
+            border-radius: 60px;
+            display: flex;
+            padding: 75px 100px 50px 100px;
+            max-width: 1050px;
+            margin-left: 320px;
+            margin-top: 155px;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 28px;
+            flex-direction: column;
+        }
+
+        .section-two-cen {
+            padding-top: 18px;
+        }
+
+        .section-two-paragraf {
+            font-size: 17px;
+            color: #42414d;
+        }
+
+        .section-two-cen-img {
+            margin-top: -30px;
+        }
+
+        .div-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            padding: 10px;
+        }
+
+        .link-section-two>a {
+            font-size: 15px;
+            margin: 5px;
+            color: #0060df;
+            text-decoration: underline;
+            font-weight: 1000;
+            
+        }
+        .link-section-two>a:hover{
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header-1">
+        <div class="header-image">
+
+            <img class="m24-c-navigation-logo-image"
+                src="https://www.mozilla.org/media/img/logos/m24/lockup-black.f2ddba3f0724.svg" alt="Mozilla"
+                width="101" height="24">
+
+        </div>
+        <div class="titlelogo">
+            <div class="logo-up"><img
+                    src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg"
+                    class="m24-c-menu-title-icon" width="16" height="16" alt="">
+                <p><strong>Firefox browsers</strong></p>
+            </div>
+
+            <p><strong>Products</strong></p>
+            <p><strong>About us</strong></p>
+
+        </div>
+        <div></div>
+    </header>
+
+    <nav class="header-2">
+        <div class="titlelogo2">
+            <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg"
+                class="m24-c-menu-title-icon" width="23" height="23" alt="">
+            <h3>firefox</h3>
+        </div>
+        <div class="nav-item">
+            <h4>Desktop</h4>
+            <p>Mobile</p>
+            <p>features</p>
+            <p>Compare Browsers</p>
+            <p>More</p>
+        </div>
+    </nav>
+
+    <section class="section-one">
+        <div class="section-text">
+            <div class="div-text">
+                <img src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo.eb1324e44442.svg"
+                    class="m24-c-menu-title-icon" width="50" height="50" alt="">
+                <h1><span style="font-size: 30px;">Firefox </span>Browser</h1>
+            </div>
+            <h2 style="font-size: 40px;">Take control of<br /> your internet</h2>
+            <p>Go online with fewer distractions, noise and stress.<br /> Think of us as bubble wrap for your brain.</p>
+            <label for="set">
+                <input checked type="checkbox" name="set" id="set">
+                Set Firefox as your default browser.
+            </label>
+            <button class="download-btn">Download Firefox</button>
+            <a class="help-text" href="#">Firefox Privacy Notice</a>
+            <a class="help-text" href="#">Download options and other languages</a>
+            <a class="help-text" href="#">Firefox Browser support</a>
+        </div>
+        <div class="section-img">
+            <img src="https://www.mozilla.org/media/img/firefox/new/desktop/firefox-new-refresh/hero.6172ddfeb189.png"
+                srcset="https://www.mozilla.org/media/img/firefox/new/desktop/firefox-new-refresh/hero-high-res.3a264c17970e.png 2x"
+                alt="Firefox on desktop and mobile." class="c-block-media-img" width="768">
+        </div>
+    </section>
+    <section class="section-two">
+        <div class="div-flex">
+            <div><img alt="Happy toggle."
+                    src="https://www.mozilla.org/media/img/firefox/new/desktop/firefox-new-refresh/toggle.d4d76beabfdf.svg"
+                    width="90" height="54">
+                <h3>Dial down <br> the noise</h3>
+                <p class="section-two-paragraf">Block ads and enhance your privacy with customizable settings and tons
+                    of downloadable extensions.</p>
+            </div>
+            <div class="section-two-cen"><img class="section-two-cen-img" alt="Multiple cursors."
+                    src="https://www.mozilla.org/media/img/firefox/new/desktop/firefox-new-refresh/multi.74ac0b1fab96.svg"
+                    width="134" height="38">
+                <h3>Multi-task or  mono-task</h3>
+                <p class="section-two-paragraf">Go into reading mode, pop out videos and get more organized with the new
+                    sidebar layout.</p>
+            </div>
+            <div><img alt="Lots of open tabs."
+                    src="https://www.mozilla.org/media/img/firefox/new/desktop/firefox-new-refresh/tabs.e4ccf0f08351.svg"
+                    width="72" height="54">
+                <h3>Keep tabs on <br> all your tabs</h3>
+                <p class="section-two-paragraf">Close duplicates, search and pin open tabs — there are almost infinite
+                    possibilities for the almost infinite number of tabs you have open.</p>
+            </div>
+        </div>
+        <div class="link-section-two">
+            <a href="#" style="color:#0060df ;">See Release Notesm</a>
+        </div>
+
+
+
+
+
+
+    </section>
+
+
+</body>
+
 </html>
