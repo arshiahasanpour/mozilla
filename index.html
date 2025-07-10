@@ -143,6 +143,7 @@
             text-decoration: underline;
         }
 
+        /* section-two */
         .section-two {
             background-color: #ededf0;
             border-radius: 60px;
@@ -185,12 +186,10 @@
             color: #0060df;
             text-decoration: underline;
             font-weight: 1000;
-
         }
 
         .link-section-two>a:hover {
             text-decoration: none;
-
         }
 
         /* section-three  */
@@ -241,7 +240,8 @@
             justify-content: center;
             align-items: center;
             padding-top: 150px;
-            gap: px;
+            gap: 100px;
+
         }
 
         .section-three-dev-two-paragraf {
@@ -251,13 +251,125 @@
         }
 
         .section-three-dev-two-img {
-            padding-right: 180px;
+            padding-right: 270px;
 
 
         }
 
         .section-three-dev-two-text {
             color: #42414d;
+
+        }
+
+        .section-three-dev-two-text>p>a {
+            text-decoration: underline;
+            color: #0060df;
+        }
+
+        .section-three-dev-two-text>p>a:hover {
+            text-decoration: none;
+        }
+
+        .section-three-dev-three {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 130px;
+            gap: 80px;
+            padding-right: 120px;
+            padding-bottom: 80px;
+        }
+
+        .section-three-dev-three-paragraf {
+            font-size: 28px;
+        }
+
+
+
+        .section-three-dev-three-img {
+            padding-left: 245px;
+            padding-top: 110px;
+        }
+
+        .section-three-dev-three-text {
+            color: #42414d;
+        }
+
+        .store-google-apple {
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding-right: 160px;
+            padding-top: 15px;
+        }
+
+        /* section-four */
+        .section-four {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f9f9fb;
+        }
+
+        .section-four-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 27px;
+            padding-top: 50px;
+        }
+
+        .section-four-img {
+            padding-top: 32px;
+        }
+
+        .section-four-text-paragraf {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding-bottom: 85px;
+        }
+
+        .section-four-text-paragraf-left>h3 {
+            font-size: 33px;
+            padding-top: 20px;
+            color: #20123a;
+        }
+
+        .section-four-text-paragraf-right>h3 {
+            font-size: 33px;
+            padding-top: 39px;
+            color: #20123a;
+        }
+
+        .section-four-text-paragraf-right>p {
+            color: #21202f;
+        }
+
+        .section-four-text-paragraf-left>p {
+            color: #21202f;
+        }
+
+        .section-four-text-paragraf-left>p>a {
+            text-decoration: underline;
+            color: #0060df;
+        }
+
+        .section-four-text-paragraf-left>p>a:hover {
+            text-decoration: none;
+        }
+
+        .section-four-text-paragraf-right>p>a {
+            text-decoration: underline;
+            color: #0060df;
+        }
+
+        .section-four-text-paragraf-right>p>a:hover {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -352,13 +464,9 @@
         <div class="link-section-two">
             <a href="#" style="color:#0060df ;">See Release Notesm</a>
         </div>
-
-
-
-
-
-
     </section>
+
+
     <!-- section-three  -->
     <section class="section-three">
         <div class="section-three-title" align="center">
@@ -410,12 +518,56 @@
 
 
 
+        <div class="section-three-dev-three">
+            <div class="section-three-dev-three-img">
+                <img alt="Desktop, laptop, and phone. " class="c-block-media-img"
+                    src="https://www.mozilla.org/media/img/firefox/new/desktop/firefox-new-refresh/screens.5d82c119a60a.svg"
+                    width="350">
 
-        <div></div>
+            </div>
+            <div>
+                <div class="section-three-dev-three-paragraf">
+                    <h3>Your stuff, on<br>all your screens</h3>
+                </div>
+                <div class="section-three-dev-three-text">
+                    <p>Get Firefox mobile so your passwords, tabs and history<br>— and the privacy and security you
+                        rely on — go with<br>you wherever you go.</p>
+                </div>
+                <div class="store-google-apple">
+                    <div><img
+                            src="https://www.mozilla.org/media/img/l10n/en-US/firefox/android/btn-google-play.77bdbc935c58.png"
+                            srcset="https://www.mozilla.org/media/img/l10n/en-US/firefox/android/btn-google-play-high-res.87d9720bbc8b.png 2x"
+                            alt="Get it on Google Play" width="152" height="45"></div>
+                    <div><img
+                            src="https://www.mozilla.org/media/img/l10n/en-US/firefox/ios/btn-app-store.1cfd5dba4a92.svg"
+                            alt="Download on the App Store" width="152" height="45"></div>
 
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
+    <!-- section-four  -->
+    <section class="section-four">
+        <div class="section-four-title">
+            <h2>*Really* make it yours</h2>
+        </div>
+        <div class="section-four-img">
+            <img alt="Firefox in dark mode."
+                src="https://www.mozilla.org/media/img/firefox/new/desktop/firefox-new-refresh/dark.7de2d719ac00.svg"
+                width="880">
+        </div>
+        <div class="section-four-text-paragraf">
+            <div class="section-four-text-paragraf-left">
+                <h3>Work smarter,<br> play harder</h3>
+                <p>Explore the possibilities for research, <br> shopping and more in <a href="">extensions.</a></p>
+            </div>
+            <div class="section-four-text-paragraf-right">
+                <h3>Bye, boring<br>browser</h3>
+                <p>The internet can be all kittens and <br> rainbows — with the right add-on <br> <a href="">theme.</a>
+                </p>
+            </div>
+        </div>
     </section>
 
 
