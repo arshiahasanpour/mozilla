@@ -406,21 +406,41 @@
         .section-five-img {
             padding-top: 35px;
         }
-        .section-six{
+
+        .section-six {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             padding-bottom: 90px;
         }
-        .section-six-label{
+
+        .section-six-label {
             color: #42414d;
             font-size: 13px;
             margin-bottom: 9px;
 
         }
-        .section-six-link{
+
+        .section-six-link {
             padding-top: 10px;
+        }
+
+        .section-seven {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: #f9f9fb;
+            color: #42414d;
+        }
+
+        .section-seven>h1>a {
+            text-decoration: underline;
+            color: #0060df;
+        }
+
+        .section-seven>h1>a:hover {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -641,20 +661,24 @@
     </section>
 
     <!-- section-six -->
-     <section class="section-six">
+    <section class="section-six">
         <div class="section-six-label">
             <label>
                 <input checked type="checkbox">
                 Set Firefox as your default browser.
             </label>
         </div>
-            
-            <button class="download-btn">Download Firefox</button>
+
+        <button class="download-btn">Download Firefox</button>
         <div class="section-six-link">
             <a class="help-text" href="#">Firefox Privacy Notice</a>
         </div>
 
-     </section>
+    </section>
+    <!-- section-seven -->
+    <section class="section-seven">
+        <h1>Questions?<a href="">Mozilla support</a> has you covered.</h1>
+    </section>
 
 
 </body>
